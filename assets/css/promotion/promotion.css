@@ -1,0 +1,14 @@
+.promotion {
+  align-items: flex-start;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
+    url(../../img/promotionBanner.jpg) transparent no-repeat center / cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 192px;
+  justify-content: flex-end;
+  padding: 16px;
+  width: 100%;
+  gap: 16px;
+}
