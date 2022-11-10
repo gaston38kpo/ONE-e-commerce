@@ -1,6 +1,8 @@
 .product-line__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
   grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, 156px);
+  max-height: 514px;
+  overflow-y: hidden;
   width: 100%;
 }
