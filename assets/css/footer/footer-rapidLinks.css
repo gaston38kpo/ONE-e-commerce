@@ -1,0 +1,5 @@
+.footer__rapid-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}

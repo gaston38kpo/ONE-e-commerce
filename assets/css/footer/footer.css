@@ -1,0 +1,6 @@
+.footer {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

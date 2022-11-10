@@ -1,22 +1,11 @@
 .head__logo {
-    display: flex;
-    align-items: center;
-    font-size: .8rem;
-    font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
-.head__logo__img {
-    width: 23px;
-    height: 17px;
+.head__logo--footer {
+  font-size: 1.16rem;
+  justify-content: center;
 }
-
-.head__logo__title1 {
-    color: #2A7AE4;
-    margin: 2px 0 0 2px;
-}
-
-.head__logo__title2 {
-    color: #464646;
-    margin-top: 2px;
-}
-
