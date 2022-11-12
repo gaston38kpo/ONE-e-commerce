@@ -6,6 +6,11 @@
   text-align: center;
   font-weight: 500;
   font-size: 0.875rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .btn--login {
@@ -17,11 +22,4 @@
 
 .btn--contact-me {
   border: none;
-}
-
-
-@media screen and (min-width: 768px) {
-  .btn--contact-me {
-    width: 133px;
-  }
 }
