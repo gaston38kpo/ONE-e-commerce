@@ -6,3 +6,9 @@
   gap: 16px;
   width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .product-line {
+    padding: 32px;
+  }
+}

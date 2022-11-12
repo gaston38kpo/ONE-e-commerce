@@ -18,14 +18,18 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/btn.css" />
     <link rel="stylesheet" href="assets/css/link.css" />
-
+    
     <link rel="stylesheet" href="assets/css/head/head.css" />
     <link rel="stylesheet" href="assets/css/head/head-logo.css" />
     <link rel="stylesheet" href="assets/css/head/head-logo-title.css" />
     <link rel="stylesheet" href="assets/css/head/head-logo-img.css" />
-    <link rel="stylesheet" href="assets/css/head/head-inputSearch.css" />
+    <link rel="stylesheet" href="assets/css/head/head-inputContainer.css" />
+    <link rel="stylesheet" href="assets/css/head/head-inputContainer-input.css" />
+    <link rel="stylesheet" href="assets/css/head/head-inputContainer-icon.css" />
+    
+    <link rel="stylesheet" href="assets/css/btn.css" />
+
     <link rel="stylesheet" href="assets/css/head/head-seachBtn.css" />
 
     <link rel="stylesheet" href="assets/css/promotion/promotion.css" />
@@ -96,12 +100,20 @@
         <h1 class="head__logo__title2">Geek</h1>
       </div>
 
-      <input
-        class="head__inputSearch"
-        type="search"
-        name="search"
-        id="search"
-      />
+      <div class="head__inputContainer">
+        <input
+          class="head__inputContainer__input"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="¿Qué deseas buscar?"
+        />
+        <img
+          class="head__inputContainer__icon"
+          src="assets/img/searchIcon.svg"
+          alt="icono lupa de busqueda"
+        />
+      </div>
       <a class="btn btn--login" href="#">Login</a>
 
       <a class="head__searchBtn" href="#"

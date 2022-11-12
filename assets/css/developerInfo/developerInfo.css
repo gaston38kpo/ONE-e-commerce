@@ -6,3 +6,9 @@
   padding: 32px;
   gap: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .developer-info {
+    gap: unset;
+  }
+}

@@ -6,3 +6,9 @@
   padding: 0;
   gap: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .promotion__details {
+    gap: 16px;
+  }
+}

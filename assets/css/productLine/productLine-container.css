@@ -2,7 +2,13 @@
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, 156px);
-  max-height: 514px;
+  max-height: 257px;
   overflow-y: hidden;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .product-line__container {
+    justify-content: space-between;
+  }
 }

@@ -5,3 +5,9 @@
   line-height: 1.1875rem;
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .developer-info__text {
+    line-height: 14px;
+  }
+}

@@ -1,5 +1,11 @@
 .footer__contact-me {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact-me {
+    width: 64%;
+  }
 }
