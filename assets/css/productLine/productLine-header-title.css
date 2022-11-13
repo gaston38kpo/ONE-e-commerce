@@ -3,3 +3,9 @@
   font-size: 1.375rem;
   color: #464646;
 }
+
+@media screen and (min-width: 992px) {
+  .product-line__header__title {
+    font-size: 2rem;
+  }
+}

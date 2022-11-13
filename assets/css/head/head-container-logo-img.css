@@ -1,0 +1,15 @@
+.head__container__logo__img {
+  width: 23px;
+  height: auto;
+}
+
+.head__container__logo__img--footer {
+  width: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .head__container__logo__img {
+    width: 40px;
+    height: auto;
+  }
+}

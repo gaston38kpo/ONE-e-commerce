@@ -1,0 +1,23 @@
+.head__container__logo {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.head__container__logo--footer {
+  font-size: 1.16rem;
+  justify-content: center;
+}
+
+.head__container__logo--displayPCQuery {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .head__container__logo--displayPCQuery {
+    display: inherit;
+    align-items: flex-start;
+    width: 15.5%;
+  }
+}

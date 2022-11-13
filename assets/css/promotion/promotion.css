@@ -6,16 +6,24 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  gap: 16px;
   height: 192px;
   justify-content: flex-end;
   padding: 16px;
   width: 100%;
-  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .promotion {    
+  .promotion {
     height: 352px;
     padding: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .promotion {
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

@@ -20,6 +20,12 @@ footer {
   footer {
     display: flex;
     justify-content: center;
-    padding: 32px;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 4rem 0;
   }
 }

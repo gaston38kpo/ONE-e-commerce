@@ -3,3 +3,13 @@
   font-size: 0.875rem;
   font-weight: 700;
 }
+
+.link--rightArrow {
+  display: flex;
+  height: 16px;
+  gap: 12px;
+}
+
+.link--rightArrow::after {
+  content: url(../img/arrow-right.svg);
+}

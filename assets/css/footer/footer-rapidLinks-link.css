@@ -6,3 +6,8 @@
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .footer__rapid-links__logo {
+    display: none;
+  }
+}

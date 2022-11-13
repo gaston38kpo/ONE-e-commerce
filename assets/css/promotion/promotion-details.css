@@ -1,14 +1,20 @@
 .promotion__details {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 0;
   gap: 8px;
+  justify-content: flex-end;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
   .promotion__details {
     gap: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .promotion__details {
+    width: 100%;
   }
 }
