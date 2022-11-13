@@ -1,0 +1,7 @@
+.login-section__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    width: clamp(275px, 78% ,350px);
+}
