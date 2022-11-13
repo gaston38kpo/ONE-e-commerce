@@ -10,5 +10,6 @@
 @media screen and (min-width: 768px) {
   .product-line__container {
     justify-content: space-between;
+    max-height: 514px;
   }
 }
