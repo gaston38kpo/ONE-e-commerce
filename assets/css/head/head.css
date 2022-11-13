@@ -9,7 +9,6 @@
 @media screen and (min-width: 992px) {
   .head {
     padding: 32px 0;
-    /* gap: 353px; */
-    width: 80%;
+    width: min(80%, 1134px);
   }
 }

@@ -16,7 +16,7 @@
 @media screen and (min-width: 992px) {
   .footer {
     gap: 112px;
-    max-width: 80%;
+    max-width: min(80%, 1134px);
     justify-content: space-between;
   }
 }

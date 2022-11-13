@@ -23,7 +23,8 @@
 @media screen and (min-width: 992px) {
   .promotion {
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: min(10%, 152px);
+    padding-right: min(10%, 152px);
+    max-width: 1440px;
   }
 }
