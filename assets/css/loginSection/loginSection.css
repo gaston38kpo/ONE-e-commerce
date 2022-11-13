@@ -14,8 +14,6 @@
 
 @media screen and (min-width: 992px) {
   .login-section {
-    max-width: min(80%, 1134px);
-    padding-left: 0;
-    padding-right: 0;
+    padding: max(7%, 92px) 0;
   }
 }

@@ -3,3 +3,9 @@
   font-weight: 700;
   line-height: 19px;
 }
+
+@media screen and (min-width: 992px) {
+  .login-section__form__title {
+    text-align: center;
+  }
+}

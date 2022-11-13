@@ -3,5 +3,12 @@
     flex-direction: column;
     row-gap: 1rem;
     align-items: center;
-    width: clamp(275px, 78% ,350px);
+    width: 275px;
+}
+
+
+@media screen and (min-width: 992px) {
+ .login-section__form{
+    align-items: unset;
+ }
 }
