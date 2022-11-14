@@ -15,11 +15,11 @@
   min-width: 110px;
 }
 
-.btn--login {
+.btn--trasparent {
   color: #2a7ae4;
   border: 1px solid #2a7ae4;
   background-color: transparent;
-  width: 133px;
+  min-width: 133px;
 }
 
 @media screen and (min-width: 992px) {
