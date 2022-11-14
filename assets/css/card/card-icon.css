@@ -1,0 +1,18 @@
+.card__icon {
+  height: 18px;
+  position: absolute;
+  top: 3%;
+}
+.card__icon > img {
+  height: 100%;
+  filter: drop-shadow(0 0 1px #000000bf) drop-shadow(0 0 6px #00000055);
+  -webkit-filter: drop-shadow(0 0 1px #000000bf) drop-shadow(0 0 6px #00000055);
+}
+
+.card__icon--trash {
+  right: 30%;
+}
+
+.card__icon--pencil {
+  right: 5%;
+}
