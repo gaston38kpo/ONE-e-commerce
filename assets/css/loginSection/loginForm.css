@@ -1,4 +1,4 @@
-.login-section__form {
+.login-form {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -8,7 +8,7 @@
 
 
 @media screen and (min-width: 992px) {
- .login-section__form{
+ .login-form{
     align-items: unset;
  }
 }

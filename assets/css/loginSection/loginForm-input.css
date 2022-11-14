@@ -1,4 +1,4 @@
-.login-section__form__input {
+.login-form__input {
   width: 100%;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -11,6 +11,6 @@
   -o-border-radius: 5px;
 }
 
-.login-section__form__input::placeholder {
+.login-form__input::placeholder {
   color: #a2a2a2;
 }

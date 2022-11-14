@@ -1,0 +1,20 @@
+.main-section {
+    display: grid;
+    place-items: center;
+    padding: 20% 1rem;
+    width: 100%;
+    background: #f5f5f5;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .main-section {
+      padding: 15% 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .main-section {
+      padding: max(7%, 92px) 0;
+    }
+  }
+  
