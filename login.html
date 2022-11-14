@@ -34,8 +34,8 @@
   <!-- LOGIN SECTION -->
   <link rel="stylesheet" href="assets/css/mainSection.css" />  
   <link rel="stylesheet" href="assets/css/loginSection/loginForm.css" />  
-  <link rel="stylesheet" href="assets/css/loginSection/loginForm-title.css" />  
-  <link rel="stylesheet" href="assets/css/loginSection/loginForm-input.css" />  
+  <link rel="stylesheet" href="assets/css/loginSection/loginForm-title.css" />
+  <link rel="stylesheet" href="assets/css/input.css" />
 
   <!-- FOOTER SECTION -->
   <link rel="stylesheet" href="assets/css/footer/footer.css" />
@@ -43,8 +43,6 @@
   <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks-link.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe-title.css" />
-  <link rel="stylesheet" href="assets/css/footer/footer-contactMe-inputName.css" />
-  <link rel="stylesheet" href="assets/css/footer/footer-contactMe-message.css" />
   
   <!-- DEVELOPER INFO SECTION -->
   <link rel="stylesheet" href="assets/css/developerInfo/developerInfo.css" />
@@ -80,8 +78,8 @@
   <main class="main-section">
     <form action="" class="login-form" autocomplete="off">
       <h3 class="login-form__title" >Iniciar Sesi&oacute;n</h3>
-      <input class="login-form__input" type="email" name="email" id="email" placeholder="Escriba su correo electrónico">
-      <input class="login-form__input" type="password" name="password" id="password" placeholder="Escriba su contrase&ntilde;a">
+      <input class="input input--login" type="email" name="email" id="email" placeholder="Escriba su correo electrónico">
+      <input class="input input--login" type="password" name="password" id="password" placeholder="Escriba su contrase&ntilde;a">
       <input class="btn" type="submit" value="Entrar">
     </form>
   </main>
@@ -130,8 +128,8 @@
       <form action="" class="footer__contact-me">
         <h3 class="footer__contact-me__title">Hable con nosotros</h3>
 
-        <input class="footer__contact-me__input-name" type="text" name="name" id="name" placeholder="Nombre" />
-        <textarea class="footer__contact-me__message" name="message" id="message" cols="30" rows="5"
+        <input class="input" type="text" name="name" id="name" placeholder="Nombre" />
+        <textarea class="input" name="message" id="message" cols="30" rows="5"
           placeholder="Escribe tu mensaje"></textarea>
 
         <input class="btn" type="submit" value="Enviar mensaje" onclick="e => e.preventDefault()" />
