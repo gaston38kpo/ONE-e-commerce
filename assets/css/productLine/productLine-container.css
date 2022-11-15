@@ -8,17 +8,18 @@
   justify-content: space-evenly;
 }
 
-.product-line__container--get-all {
-  max-height: unset;
-  overflow-y: unset;
-}
-
 @media screen and (min-width: 768px) {
   .product-line__container {
     justify-content: space-between;
     max-height: calc(257px * 2);
   }
-  .product-line__container--get-all {
-    max-height: none;
-  }
+}
+
+.product-line__container--get-all {
+  max-height: unset;
+  overflow-y: unset;
+}
+
+.product-line__container--3-rows {
+  max-height: calc(257px * 3);
 }

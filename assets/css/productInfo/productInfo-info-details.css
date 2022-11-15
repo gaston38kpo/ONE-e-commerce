@@ -1,0 +1,12 @@
+.product-info__info__details {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .product-info__info__details {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+}
