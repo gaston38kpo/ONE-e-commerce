@@ -1,5 +1,6 @@
 .head__container__inputContainer {
   display: none;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {

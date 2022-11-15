@@ -1,13 +1,13 @@
 .head__container__inputContainer__input {
   background: #f5f5f5;
   border: none;
-  border-radius: 20px 0 0 20px;
-  -webkit-border-radius: 20px 0 0 20px;
-  -moz-border-radius: 20px 0 0 20px;
-  -ms-border-radius: 20px 0 0 20px;
-  -o-border-radius: 20px 0 0 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   padding: 11px 0 11px 16px;
-  width: 238px;
+  width: 272px;
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
 }
@@ -16,9 +16,13 @@
   color: #a2a2a2;
 }
 
+.head__container__inputContainer__input:focus {
+  outline: 1px solid #a2a2a2;
+}
+
 @media screen and (min-width: 992px) {
   .head__container__inputContainer__input {
-    width: 359px;
+    width: 393px;
   }
   
 }
