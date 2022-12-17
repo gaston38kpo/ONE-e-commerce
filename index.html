@@ -56,6 +56,7 @@
   <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks-link.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe-title.css" />
+  <link rel="stylesheet" href="assets/css/footer/footer-contactMe-inputBox.css" />
   <link rel="stylesheet" href="assets/css/input.css" />
   
   <!-- DEVELOPER INFO SECTION -->
@@ -293,13 +294,21 @@
         </li>
       </ul>
 
-      <form action="" class="footer__contact-me">
+      <form action="" class="footer__contact-me" autocomplete="off">
         <h3 class="footer__contact-me__title">Hable con nosotros</h3>
-
-        <input class="input" type="text" name="name" id="name" placeholder="Nombre" />
-        <textarea class="input" name="message" id="message" cols="30" rows="5"
-          placeholder="Escribe tu mensaje"></textarea>
-
+      
+        <section class="footer__contact-me__input-box">
+          <input class="input" type="text" name="name" id="name" placeholder="Nombre" data-type="name" pattern="^.{0,40}$"
+            required />
+          <span class="footer__contact-me__input-box__tooltip">Este campo no es valido</span>
+        </section>
+        <section class="footer__contact-me__input-box">
+          <textarea class="input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje"
+            data-type="message" required></textarea>
+          <span class="footer__contact-me__input-box__tooltip">Este campo no es valido</span>
+        </section>
+      
+      
         <input class="btn" type="submit" value="Enviar mensaje" onclick="e => e.preventDefault()" />
       </form>
     </div>
@@ -310,7 +319,7 @@
     <p class="developer-info__text">2022</p>
   </div>
 
-  <script type="module" src="assets/js/script.js"></script>
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
