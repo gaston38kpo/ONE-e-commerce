@@ -7,10 +7,10 @@ export function valida(input) {
 
   if (input.validity.valid) {
     input.parentElement.classList.remove("input--invalid");
-    input.parentElement.querySelector(".footer__contact-me__input-box__tooltip").innerHTML = "";
+    input.parentElement.querySelector(".input-box__tooltip").innerHTML = "";
   } else {
     input.parentElement.classList.add("input--invalid");
-    input.parentElement.querySelector(".footer__contact-me__input-box__tooltip").innerHTML =
+    input.parentElement.querySelector(".input-box__tooltip").innerHTML =
       showErrorMessage(inputType, input);
   }
 }
@@ -30,6 +30,14 @@ const errorMessages = {
   message: {
     valueMissing: "El campo de mensaje no puede estar vacío",
     customError: "El mensaje no puede ser mayor a 120 caracteres.",
+  },
+  loginEmail: {    
+    valueMissing: "El campo email no puede estar vacío",
+    typeMismatch: "El correo no es válido",
+    patternMismatch: "El correo no es válido. Ej: mail@example.com",
+  },
+  loginPassword: {
+    valueMissing: "El campo de la contraseña no puede estar vacío",
   },
 };
 

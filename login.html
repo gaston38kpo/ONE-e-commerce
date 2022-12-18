@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks-link.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe-title.css" />
-  <link rel="stylesheet" href="assets/css/footer/footer-contactMe-inputBox.css" />
+  
   
   <!-- DEVELOPER INFO SECTION -->
   <link rel="stylesheet" href="assets/css/developerInfo/developerInfo.css" />
@@ -79,9 +79,17 @@
   <main class="main-section">
     <form action="" class="login-form" autocomplete="off">
       <h3 class="login-form__title" >Iniciar Sesi&oacute;n</h3>
-      <input class="input input--login" type="email" name="email" id="email" placeholder="Escriba su correo electrónico">
-      <input class="input input--login" type="password" name="password" id="password" placeholder="Escriba su contrase&ntilde;a">
-      <input class="btn" type="submit" value="Entrar">
+
+      <section class="input-box">
+        <input class="input input--login" type="email" name="email" id="email" placeholder="Escriba su correo electrónico" data-type="loginEmail" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$" required>
+        <span class="input-box__tooltip">Este campo no es valido</span>
+      </section>
+      <section class="input-box">
+        <input class="input input--login" type="password" name="password" id="password" placeholder="Escriba su contrase&ntilde;a" data-type="loginPassword" required>
+        <span class="input-box__tooltip">Este campo no es valido</span>
+      </section>
+        
+      <input class="btn" type="submit" value="Entrar" >
     </form>
   </main>
 
@@ -129,19 +137,19 @@
       <form action="" class="footer__contact-me" autocomplete="off">
         <h3 class="footer__contact-me__title">Hable con nosotros</h3>
       
-        <section class="footer__contact-me__input-box">
+        <section class="input-box">
           <input class="input" type="text" name="name" id="name" placeholder="Nombre" data-type="name" pattern="^.{0,40}$"
             required />
-          <span class="footer__contact-me__input-box__tooltip">Este campo no es valido</span>
+          <span class="input-box__tooltip">Este campo no es valido</span>
         </section>
-        <section class="footer__contact-me__input-box">
+        <section class="input-box">
           <textarea class="input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje"
             data-type="message" required></textarea>
-          <span class="footer__contact-me__input-box__tooltip">Este campo no es valido</span>
+          <span class="input-box__tooltip">Este campo no es valido</span>
         </section>
       
       
-        <input class="btn" type="submit" value="Enviar mensaje" onclick="e => e.preventDefault()" />
+        <input class="btn" type="submit" value="Enviar mensaje"  />
       </form>
     </div>
   </footer>
