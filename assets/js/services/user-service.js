@@ -1,9 +1,9 @@
 const listUsers = async () => {
-  const response = await fetch("../db.json");
-  const data = await response.json();
-  return data.users;
+  const response = await fetch("http://localhost:3000/users/");
+  return await response.json();
 };
 
 export const userServices = {
   listUsers,
 };
+

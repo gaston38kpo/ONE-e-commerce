@@ -72,7 +72,7 @@
       <a class="btn btn--trasparent" href="./products.html">Men&uacute; Administrador</a>
  
       <a class="head__searchBtn" href="#">
-        <img src="assets/img/searchIcon.svg" alt="icono lupa de busqueda" />
+        <img src="assets/img/searchIcon.svg" alt="icono lupa de búsqueda" />
       </a>
       
     </div>
@@ -81,11 +81,26 @@
   <main class="main-section">
     <form action="" class="add-form" autocomplete="off">
       <h3 class="add-form__title" >Agregar nuevo producto</h3>
-      <input class="input" type="url" name="url" id="url" placeholder="URL de imagen">
-      <input class="input" type="text" name="category" id="category" placeholder="Categoría">
-      <input class="input" type="text" name="product-name" id="product-name" placeholder="Nombre del producto">
-      <input class="input" type="number" name="password" id="password" placeholder="Precio del producto">
-      <textarea class="input" name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+    <section class="input-box">
+      <input class="input" type="text" name="url" id="url" placeholder="URL de imagen" data-type="productURL" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="text" name="category" id="category" placeholder="Categoría" data-type="productCategory" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="text" name="product-name" id="product-name" placeholder="Nombre del producto" data-type="productName" pattern="^.{0,20}$" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="number" name="product-price" id="product-price" placeholder="Precio del producto" data-type="productPrice" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <textarea class="input" name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" data-type="productDescription" required></textarea>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
       <input class="btn" type="submit" value="Agregar producto">
     </form>
   </main>
@@ -156,7 +171,11 @@
     <p class="developer-info__text">2022</p>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+  integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="assets/js/script.js"></script>
+  <script type="module" src="assets/js/controllers/addProduct-controller.js"></script>
 </body>
 
 </html>

@@ -23,6 +23,14 @@
       "name": "Producto 2",
       "price": 15.49,
       "description": "Descripción del producto 2"
+    },
+    {
+      "name": "taza",
+      "description": "taza de star wars",
+      "price": "500",
+      "url": "./assets/img/products/line1-product1.svg",
+      "category": "star wars",
+      "id": "c90b69db-61a2-4c5c-99d9-7c7881c16b1d"
     }
   ]
 }
