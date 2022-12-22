@@ -18,6 +18,7 @@ form.addEventListener("submit", async (event) => {
       url,
       category
     );
+    window.location.href = "../../../products.html"
   } catch (error) {
     alert("Error: " + error);
   }

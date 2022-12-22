@@ -3,14 +3,14 @@ const listProducts = async () => {
   return await response.json();
 };
 
-const createProduct = async (name, description, price, url, category) => {
+const createProduct = async (url, name, description, price, category) => {
   try {
     return await fetch("http://localhost:3000/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, description, price, url, category, id: uuid.v4() }),
+      body: JSON.stringify({ id: uuid.v4(), name, description, price, url, category}),
     });
   } catch (error) {
     alert("Error: " + error);

@@ -13,24 +13,124 @@
   ],
   "products": [
     {
-      "id": "1",
-      "name": "Producto 1",
-      "price": 10.99,
-      "description": "Descripción del producto 1"
-    },
-    {
-      "id": "2",
-      "name": "Producto 2",
-      "price": 15.49,
-      "description": "Descripción del producto 2"
-    },
-    {
+      "id": "c90b69db-61a2-4c5c-99d9-7c7881c16b1d",
       "name": "taza",
       "description": "taza de star wars",
       "price": "500",
-      "url": "./assets/img/products/line1-product1.svg",
-      "category": "star wars",
-      "id": "c90b69db-61a2-4c5c-99d9-7c7881c16b1d"
+      "url": "https://picsum.photos/200/300?random=1&blur=3",
+      "category": "star wars"
+    },
+    {
+      "id": "3a57f7b2-a2d6-4c34-9b6e-bdddce37bc14",
+      "name": "Cafetera",
+      "description": "Cafetera de goteo con capacidad para 8 tazas",
+      "price": "800",
+      "url": "https://picsum.photos/200/300?random=2&blur=3",
+      "category": "Cocina"
+    },
+    {
+      "id": "3b6d2a38-7a1a-4b72-9d8c-ccb13ba9a2f9",
+      "name": "Libro",
+      "description": "El alquimista de Paulo Coelho",
+      "price": "250",
+      "url": "https://picsum.photos/200/300?random=3&blur=3",
+      "category": "Libros"
+    },
+    {
+      "id": "7c3e9b8a-5d91-4c5f-b80d-ab4e4b5f5ef5",
+      "name": "Bolsa de deporte",
+      "description": "Bolsa de deporte de tela impermeable",
+      "price": "350",
+      "url": "https://picsum.photos/200/300?random=4&blur=3",
+      "category": "Deportes"
+    },
+    {
+      "id": "8d2e5be1-1c67-4b5f-bdb7-cc0b5e9a0d41",
+      "name": "Pantalla",
+      "description": "Pantalla LED de 50 pulgadas",
+      "price": "4999",
+      "url": "https://picsum.photos/200/300?random=5&blur=3",
+      "category": "Tecnología"
+    },
+    {
+      "id": "23d78f96-e9a7-4b24-9087-d2e1b25f8e20",
+      "name": "Sable de luz",
+      "description": "Sable de luz de la saga de Star Wars",
+      "price": "999",
+      "url": "https://picsum.photos/200/300?random=6&blur=3",
+      "category": "Star Wars"
+    },
+    {
+      "id": "93c72d7e-fbb6-4e6f-a4b9-4b9699f4c321",
+      "name": "Caja de música",
+      "description": "Caja de música con temática de Star Wars",
+      "price": "799",
+      "url": "https://picsum.photos/200/300?random=7&blur=3",
+      "category": "Star Wars"
+    },
+    {
+      "id": "7f8f3bef-7d78-49e3-b3a3-d9c7ec9d0a43",
+      "name": "Figura de acción",
+      "description": "Figura de acción de Darth Vader",
+      "price": "499",
+      "url": "https://picsum.photos/200/300?random=8&blur=3",
+      "category": "Star Wars"
+    },
+    {
+      "id": "f3e8b3c1-f7b2-4b3c-bab3-19b2f80b1d8b",
+      "name": "Consola PlayStation 5",
+      "description": "Consola de última generación de Sony",
+      "price": "7999",
+      "url": "https://picsum.photos/200/300?random=9&blur=3",
+      "category": "Consolas"
+    },
+    {
+      "id": "79d9e7c3-3c3e-4f2c-8936-9b9f9be739ed",
+      "name": "Consola Xbox Series X",
+      "description": "Consola de última generación de Microsoft",
+      "price": "7999",
+      "url": "https://picsum.photos/200/300?random=10&blur=3",
+      "category": "Consolas"
+    },
+    {
+      "id": "cbabcb7f-f2c2-45ed-8c01-0f6d70c8823f",
+      "name": "Juego de mesa",
+      "description": "Juego de mesa de estrategia",
+      "price": "799",
+      "url": "https://picsum.photos/200/300?random=11&blur=3",
+      "category": "Diversos"
+    },
+    {
+      "id": "cba0f72c-d347-4c1f-9c5e-0d1deee2e7f6",
+      "name": "Peluche",
+      "description": "Peluche de oso con sonido",
+      "price": "399",
+      "url": "https://picsum.photos/200/300?random=12&blur=3",
+      "category": "Diversos"
+    },
+    {
+      "id": "6d93a6df-7a33-4b91-8f1e-9d9ffaac0b57",
+      "name": "Puzzle",
+      "description": "Puzzle de 1000 piezas",
+      "price": "499",
+      "url": "https://picsum.photos/200/300?random=13&blur=3",
+      "category": "Diversos"
+    },
+    {
+      "id": "f70cda87-9b9a-4ba1-8b91-f29fd2d2c5b8",
+      "name": "Lampara de mesa",
+      "description": "Lampara de mesa de diseño moderno",
+      "price": "799",
+      "url": "https://picsum.photos/200/300?random=14&blur=3",
+      "category": "Diversos"
+    },
+    {
+      "id": "92ece33d-11a4-4a2e-9b3f-30f9b3fddb3e",
+      "name": "Reloj de pared",
+      "description": "Reloj de pared de diseño elegante",
+      "price": "999",
+      "url": "https://picsum.photos/200/300?random=15&blur=3",
+      "category": "Diversos"
     }
   ]
 }
