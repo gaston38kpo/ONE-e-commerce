@@ -8,4 +8,10 @@ inputs.forEach((input) => {
   });
 });
 
+const searchForm = document.getElementById("searchForm");
+const searchBar = document.getElementById("searchBar");
 
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  window.location.href = `./products.html?search=${searchBar.value}`
+});

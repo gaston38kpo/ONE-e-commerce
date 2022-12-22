@@ -12,21 +12,21 @@ const createNewCard = (id, name, description, price, url, category) => {
   card.classList.add("card");
 
   const cardContent = `
-<img 
-    class="card__img" 
-    src="${url}" 
-    alt="${capwords(name)}" 
-    loading="lazy" 
-    title="${description}" />        
-<a class="card__icon card__icon--trash" id="deleteBtn" data-id="${id}" href="#">
-    <img loading="lazy" src="assets/img/trash-icon.svg" alt="icono de papelera" />
-</a>
-<a class="card__icon card__icon--pencil" href="./add-product.html?id=${id}">
-    <img loading="lazy" src="assets/img/pencil-icon.svg" alt="icono de lápiz" />
-</a>
-<h3 class="card__title" title="${category}">${capwords(name)}</h3>
-<span class="card__price">$ ${price}</span>
-<span class="card__id">#${id}</span>`;
+  <img 
+      class="card__img" 
+      src="${url}" 
+      alt="${capwords(name)}" 
+      loading="lazy" 
+      title="${description}" />        
+  <a class="card__icon card__icon--trash" id="deleteBtn" data-id="${id}" href="#">
+      <img loading="lazy" src="assets/img/trash-icon.svg" alt="icono de papelera" />
+  </a>
+  <a class="card__icon card__icon--pencil" href="./add-product.html?id=${id}">
+      <img loading="lazy" src="assets/img/pencil-icon.svg" alt="icono de lápiz" />
+  </a>
+  <h3 class="card__title" title="${category}">${capwords(name)}</h3>
+  <span class="card__price">$ ${price}</span>
+  <span class="card__id">#${id}</span>`;
 
   card.innerHTML = cardContent;
 
@@ -47,12 +47,31 @@ const createNewCard = (id, name, description, price, url, category) => {
 };
 
 const productGrid = document.querySelector("#productGrid");
+const url = new URL(window.location);
+const categoryFilter = url.searchParams.get("category");
+const searchFilter = url.searchParams.get("search");
 
 try {
   const listProducts = await productServices.listProducts();
+
   listProducts.forEach(({ id, name, description, price, url, category }) => {
-    const newCard = createNewCard(id, name, description, price, url, category);
-    productGrid.appendChild(newCard);
+    if (
+      (!categoryFilter || categoryFilter.toLowerCase() == category.toLowerCase()) &&
+      (!searchFilter ||
+        name.toLowerCase().includes(searchFilter.toLowerCase()) ||
+        description.toLowerCase().includes(searchFilter.toLowerCase()) ||
+        category.toLowerCase().includes(searchFilter.toLowerCase()))
+    ) {
+      const newCard = createNewCard(
+        id,
+        name,
+        description,
+        price,
+        url,
+        category
+      );
+      productGrid.appendChild(newCard);
+    }
   });
 } catch (error) {
   alert("Ocurrio un error: " + error);
