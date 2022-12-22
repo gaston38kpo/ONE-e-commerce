@@ -56,10 +56,13 @@ try {
 
   listProducts.forEach(({ id, name, description, price, url, category }) => {
     if (
-      (!categoryFilter || categoryFilter.toLowerCase() == category.toLowerCase()) &&
+      (!categoryFilter ||
+        categoryFilter.toLowerCase() == category.toLowerCase()) &&
       (!searchFilter ||
+        id.includes(searchFilter) ||
         name.toLowerCase().includes(searchFilter.toLowerCase()) ||
         description.toLowerCase().includes(searchFilter.toLowerCase()) ||
+        price.includes(searchFilter) ||
         category.toLowerCase().includes(searchFilter.toLowerCase()))
     ) {
       const newCard = createNewCard(
