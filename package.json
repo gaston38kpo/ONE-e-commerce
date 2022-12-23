@@ -1,0 +1,19 @@
+{
+  "name": "-one-ecommerce",
+  "version": "1.0.0",
+  "description": "e-commerce para le programa one con alura",
+  "main": "/assets/js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaston38kpo/-ONE-e-commerce.git"
+  },
+  "author": "Gaston Giacobini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaston38kpo/-ONE-e-commerce/issues"
+  },
+  "homepage": "https://github.com/gaston38kpo/-ONE-e-commerce#readme"
+}
