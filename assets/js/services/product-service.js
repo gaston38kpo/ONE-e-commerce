@@ -1,11 +1,11 @@
 const listProducts = async () => {
-  const response = await fetch("http://localhost:3000/products/");
+  const response = await fetch("https://e-commerce-lz5p.onrender.com/products/");
   return await response.json();
 };
 
 const createProduct = async (url, name, description, price, category) => {
   try {
-    return await fetch("http://localhost:3000/products", {
+    return await fetch("https://e-commerce-lz5p.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,7 +19,7 @@ const createProduct = async (url, name, description, price, category) => {
 
 const readProduct = async (id) => {
   try {
-    const response = await fetch(`http://localhost:3000/products/${id}`);
+    const response = await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`);
     return await response.json();
   } catch (error) {
     window.location.href = "../screens/error.html";
@@ -28,7 +28,7 @@ const readProduct = async (id) => {
 
 const updateProduct = async (name, email, id) => {
   try {
-    return await fetch(`http://localhost:3000/products/${id}`, {
+    return await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const updateProduct = async (name, email, id) => {
 
 const deleteProduct = async (id) => {
   try {
-    return await fetch(`http://localhost:3000/products/${id}`, {
+    return await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`, {
       method: "DELETE",
     });
   } catch (error) {
