@@ -2,9 +2,10 @@
   "name": "-one-ecommerce",
   "version": "1.0.0",
   "description": "e-commerce para le programa one con alura",
-  "main": "/assets/js/script.js",
+  "main": "/assets/js/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./assets/js/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gaston38kpo/-ONE-e-commerce/issues"
   },
-  "homepage": "https://github.com/gaston38kpo/-ONE-e-commerce#readme"
+  "homepage": "https://github.com/gaston38kpo/-ONE-e-commerce#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
 }
