@@ -17,7 +17,7 @@
       "name": "taza",
       "description": "taza de star wars",
       "price": "500",
-      "url": "https://picsum.photos/200/300?random=1&blur=3",
+      "url": "https://picsum.photos/200/300?random=1",
       "category": "star wars"
     },
     {
@@ -25,7 +25,7 @@
       "name": "Cafetera",
       "description": "Cafetera de goteo con capacidad para 8 tazas",
       "price": "800",
-      "url": "https://picsum.photos/200/300?random=2&blur=3",
+      "url": "https://picsum.photos/200/300?random=2",
       "category": "Cocina"
     },
     {
@@ -33,7 +33,7 @@
       "name": "Libro",
       "description": "El alquimista de Paulo Coelho",
       "price": "250",
-      "url": "https://picsum.photos/200/300?random=3&blur=3",
+      "url": "https://picsum.photos/200/300?random=3",
       "category": "Star Wars"
     },
     {
@@ -41,7 +41,7 @@
       "name": "Bolsa de deporte",
       "description": "Bolsa de deporte de tela impermeable",
       "price": "350",
-      "url": "https://picsum.photos/200/300?random=4&blur=3",
+      "url": "https://picsum.photos/200/300?random=4",
       "category": "Deportes"
     },
     {
@@ -49,7 +49,7 @@
       "name": "Pantalla",
       "description": "Pantalla LED de 50 pulgadas",
       "price": "4999",
-      "url": "https://picsum.photos/200/300?random=5&blur=3",
+      "url": "https://picsum.photos/200/300?random=5",
       "category": "Tecnología"
     },
     {
@@ -57,7 +57,7 @@
       "name": "Sable de luz",
       "description": "Sable de luz de la saga de Star Wars",
       "price": "999",
-      "url": "https://picsum.photos/200/300?random=6&blur=3",
+      "url": "https://picsum.photos/200/300?random=6",
       "category": "Star Wars"
     },
     {
@@ -65,7 +65,7 @@
       "name": "Caja de música",
       "description": "Caja de música con temática de Star Wars",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=7&blur=3",
+      "url": "https://picsum.photos/200/300?random=7",
       "category": "Star Wars"
     },
     {
@@ -73,7 +73,7 @@
       "name": "Figura de acción",
       "description": "Figura de acción de Darth Vader",
       "price": "499",
-      "url": "https://picsum.photos/200/300?random=8&blur=3",
+      "url": "https://picsum.photos/200/300?random=8",
       "category": "Star Wars"
     },
     {
@@ -81,7 +81,7 @@
       "name": "Consola PlayStation 5",
       "description": "Consola de última generación de Sony",
       "price": "7999",
-      "url": "https://picsum.photos/200/300?random=9&blur=3",
+      "url": "https://picsum.photos/200/300?random=9",
       "category": "Consolas"
     },
     {
@@ -89,7 +89,7 @@
       "name": "Consola Xbox Series X",
       "description": "Consola de última generación de Microsoft",
       "price": "7999",
-      "url": "https://picsum.photos/200/300?random=10&blur=3",
+      "url": "https://picsum.photos/200/300?random=10",
       "category": "Consolas"
     },
     {
@@ -97,7 +97,7 @@
       "name": "Juego de mesa",
       "description": "Juego de mesa de estrategia",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=11&blur=3",
+      "url": "https://picsum.photos/200/300?random=11",
       "category": "Diversos"
     },
     {
@@ -105,7 +105,7 @@
       "name": "Peluche",
       "description": "Peluche de oso con sonido",
       "price": "399",
-      "url": "https://picsum.photos/200/300?random=12&blur=3",
+      "url": "https://picsum.photos/200/300?random=12",
       "category": "Diversos"
     },
     {
@@ -113,7 +113,7 @@
       "name": "Puzzle",
       "description": "Puzzle de 1000 piezas",
       "price": "499",
-      "url": "https://picsum.photos/200/300?random=13&blur=3",
+      "url": "https://picsum.photos/200/300?random=13",
       "category": "Diversos"
     },
     {
@@ -121,7 +121,7 @@
       "name": "Lampara de mesa",
       "description": "Lampara de mesa de diseño moderno",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=14&blur=3",
+      "url": "https://picsum.photos/200/300?random=14",
       "category": "Diversos"
     },
     {
@@ -129,7 +129,7 @@
       "name": "Reloj de pared",
       "description": "Reloj de pared de diseño elegante",
       "price": "999",
-      "url": "https://picsum.photos/200/300?random=15&blur=3",
+      "url": "https://picsum.photos/200/300?random=15",
       "category": "Diversos"
     }
   ]

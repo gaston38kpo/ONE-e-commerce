@@ -11,7 +11,7 @@ const createNewCard = (id, name, description, price, url, category) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  const cardContent = `
+  card.innerHTML = `
   <img 
       class="card__img" 
       src="${url}" 
@@ -28,8 +28,6 @@ const createNewCard = (id, name, description, price, url, category) => {
   <span class="card__price">$ ${price}</span>
   <span class="card__id">#${id}</span>`;
 
-  card.innerHTML = cardContent;
-
   const deleteBtn = card.querySelector("#deleteBtn");
 
   deleteBtn.addEventListener("click", async (event) => {
@@ -39,7 +37,7 @@ const createNewCard = (id, name, description, price, url, category) => {
     try {
       await productServices.deleteProduct(id);
     } catch (error) {
-      alert("Ah ocurrido un error: " + error);
+      alert(`Ah ocurrido un error: ${error}`);
     }
   });
 
