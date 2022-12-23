@@ -33,7 +33,7 @@ try {
   productLine.forEach((line) => {
     let LIMIT_OF_PRODUCTS_PER_LINE = 12;
     let productCounter = 0;
-    console.log(line.dataset.category);
+    
     listProducts.every(({ id, name, description, price, url, category }) => {
       if (line.dataset.category.toLowerCase() == category.toLowerCase()) {
         const newCard = createNewCard(

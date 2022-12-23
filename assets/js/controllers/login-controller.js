@@ -4,8 +4,7 @@ const verifyCredentials = async (loginEmail, loginPassword) => {
   try {
     const users = await userServices.listUsers();
     
-    for (const user of users) {
-      console.log(user);
+    for (const user of users) {      
       if (loginEmail == user.email && loginPassword == user.password) {
         return true;
       }
@@ -27,7 +26,7 @@ loginForm.addEventListener("submit", async (event) => {
   const isValidUser = await verifyCredentials(loginEmail, loginPassword);
 
   if (isValidUser) {
-    window.location.href = "../../../products.html";
+    window.location.href = "./products.html";
   } else {
     alert("Las credenciales no son válidas.(email: usuario1@ejemplo.com, password: usuario1)");
   }
