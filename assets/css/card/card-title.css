@@ -3,4 +3,6 @@
   font-size: 0.875rem;
   line-height: 1rem;
   color: #464646;
+  height: 1rem;
+  overflow-y: auto;
 }

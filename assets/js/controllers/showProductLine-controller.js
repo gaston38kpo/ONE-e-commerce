@@ -17,7 +17,7 @@ const createNewCard = (id, name, description, price, url, category) => {
       class="card__img" 
       loading="lazy" 
       title="${description}" />
-        <h3 class="card__title" title="${category}">${capwords(name)}</h3>
+        <h3 class="card__title" title="${capwords(name)}">${capwords(name)}</h3>
         <span class="card__price">$ ${price}</span>
         <a href="./product-info.html?id=${id}" class="link">Ver Producto</a>
  `;
@@ -31,8 +31,10 @@ try {
   const listProducts = await productServices.listProducts();
 
   productLine.forEach((line) => {
+    let LIMIT_OF_PRODUCTS_PER_LINE = 12;
+    let productCounter = 0;
     console.log(line.dataset.category);
-    listProducts.forEach(({ id, name, description, price, url, category }) => {
+    listProducts.every(({ id, name, description, price, url, category }) => {
       if (line.dataset.category.toLowerCase() == category.toLowerCase()) {
         const newCard = createNewCard(
           id,
@@ -43,7 +45,11 @@ try {
           category
         );
         line.appendChild(newCard);
+        productCounter++;
+
+        return productCounter < LIMIT_OF_PRODUCTS_PER_LINE;
       }
+      return true;
     });
   });
 } catch (error) {
