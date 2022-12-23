@@ -17,7 +17,7 @@
       "name": "taza",
       "description": "taza de star wars",
       "price": "500",
-      "url": "https://picsum.photos/200/300?random=1&blur=3",
+      "url": "https://picsum.photos/200/300?random=1",
       "category": "star wars"
     },
     {
@@ -25,7 +25,7 @@
       "name": "Cafetera",
       "description": "Cafetera de goteo con capacidad para 8 tazas",
       "price": "800",
-      "url": "https://picsum.photos/200/300?random=2&blur=3",
+      "url": "https://picsum.photos/200/300?random=2",
       "category": "Cocina"
     },
     {
@@ -33,15 +33,15 @@
       "name": "Libro",
       "description": "El alquimista de Paulo Coelho",
       "price": "250",
-      "url": "https://picsum.photos/200/300?random=3&blur=3",
-      "category": "Libros"
+      "url": "https://picsum.photos/200/300?random=3",
+      "category": "Star Wars"
     },
     {
       "id": "7c3e9b8a-5d91-4c5f-b80d-ab4e4b5f5ef5",
       "name": "Bolsa de deporte",
       "description": "Bolsa de deporte de tela impermeable",
       "price": "350",
-      "url": "https://picsum.photos/200/300?random=4&blur=3",
+      "url": "https://picsum.photos/200/300?random=4",
       "category": "Deportes"
     },
     {
@@ -49,7 +49,7 @@
       "name": "Pantalla",
       "description": "Pantalla LED de 50 pulgadas",
       "price": "4999",
-      "url": "https://picsum.photos/200/300?random=5&blur=3",
+      "url": "https://picsum.photos/200/300?random=5",
       "category": "Tecnología"
     },
     {
@@ -57,7 +57,7 @@
       "name": "Sable de luz",
       "description": "Sable de luz de la saga de Star Wars",
       "price": "999",
-      "url": "https://picsum.photos/200/300?random=6&blur=3",
+      "url": "https://picsum.photos/200/300?random=6",
       "category": "Star Wars"
     },
     {
@@ -65,7 +65,7 @@
       "name": "Caja de música",
       "description": "Caja de música con temática de Star Wars",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=7&blur=3",
+      "url": "https://picsum.photos/200/300?random=7",
       "category": "Star Wars"
     },
     {
@@ -73,7 +73,7 @@
       "name": "Figura de acción",
       "description": "Figura de acción de Darth Vader",
       "price": "499",
-      "url": "https://picsum.photos/200/300?random=8&blur=3",
+      "url": "https://picsum.photos/200/300?random=8",
       "category": "Star Wars"
     },
     {
@@ -81,7 +81,7 @@
       "name": "Consola PlayStation 5",
       "description": "Consola de última generación de Sony",
       "price": "7999",
-      "url": "https://picsum.photos/200/300?random=9&blur=3",
+      "url": "https://picsum.photos/200/300?random=9",
       "category": "Consolas"
     },
     {
@@ -89,7 +89,7 @@
       "name": "Consola Xbox Series X",
       "description": "Consola de última generación de Microsoft",
       "price": "7999",
-      "url": "https://picsum.photos/200/300?random=10&blur=3",
+      "url": "https://picsum.photos/200/300?random=10",
       "category": "Consolas"
     },
     {
@@ -97,7 +97,7 @@
       "name": "Juego de mesa",
       "description": "Juego de mesa de estrategia",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=11&blur=3",
+      "url": "https://picsum.photos/200/300?random=11",
       "category": "Diversos"
     },
     {
@@ -105,7 +105,7 @@
       "name": "Peluche",
       "description": "Peluche de oso con sonido",
       "price": "399",
-      "url": "https://picsum.photos/200/300?random=12&blur=3",
+      "url": "https://picsum.photos/200/300?random=12",
       "category": "Diversos"
     },
     {
@@ -113,7 +113,7 @@
       "name": "Puzzle",
       "description": "Puzzle de 1000 piezas",
       "price": "499",
-      "url": "https://picsum.photos/200/300?random=13&blur=3",
+      "url": "https://picsum.photos/200/300?random=13",
       "category": "Diversos"
     },
     {
@@ -121,7 +121,7 @@
       "name": "Lampara de mesa",
       "description": "Lampara de mesa de diseño moderno",
       "price": "799",
-      "url": "https://picsum.photos/200/300?random=14&blur=3",
+      "url": "https://picsum.photos/200/300?random=14",
       "category": "Diversos"
     },
     {
@@ -129,8 +129,120 @@
       "name": "Reloj de pared",
       "description": "Reloj de pared de diseño elegante",
       "price": "999",
-      "url": "https://picsum.photos/200/300?random=15&blur=3",
+      "url": "https://picsum.photos/200/300?random=15",
       "category": "Diversos"
-    }
+    },
+    {
+      "id": "a798b11e-1e80-4221-9566-e37e70d2e936",
+      "name": "Figura de Star Wars",
+      "description": "Figura de colección de Star Wars",
+      "price": "399",
+      "url": "https://picsum.photos/200/300?random=16",
+      "category": "Star Wars"
+    },
+    {
+      "id": "5b5f5c61-f6b5-4cb9-b4cf-a7d44e1eeb5b",
+      "name": "Juego de Star Wars para consola",
+      "description": "Juego de Star Wars para consola de última generación",
+      "price": "799",
+      "url": "https://picsum.photos/200/300?random=17",
+      "category": "Star Wars"
+    },
+    {
+      "id": "b2ebe1be-ce05-4fbb-bcb9-8e7c1e9a8914",
+      "name": "Consola de juegos",
+      "description": "Consola de juegos de última generación",
+      "price": "3999",
+      "url": "https://picsum.photos/200/300?random=18",
+      "category": "Consolas"
+    },
+    {
+      "id": "1d6b5f6b-7f39-4ebb-a2e2-d961ba837d86",
+      "name": "Control inalámbrico",
+      "description": "Control inalámbrico para consola de juegos",
+      "price": "799",
+      "url": "https://picsum.photos/200/300?random=19",
+      "category": "Consolas"
+    },
+    {
+      "id": "45e0d7d8-b7e2-499a-b9a9-65e5f54c36b1",
+      "name": "Audífonos para juegos",
+      "description": "Audífonos inalámbricos para juegos",
+      "price": "999",
+      "url": "https://picsum.photos/200/300?random=20",
+      "category": "Consolas"
+    },
+    {
+      "id": "d9959a60-2ece-4e1e-b8f7-dfdf48ed20d9",
+      "name": "Figura de acción",
+      "description": "Figura de acción de colección",
+      "price": "399",
+      "url": "https://picsum.photos/200/300?random=21",
+      "category": "Diversos"
+    },
+    {
+      "id": "d5a01b5c-b757-41a1-9d48-6b1c6b5a6a3e",
+      "name": "Caja de música",
+      "description": "Caja de música con diseño vintage",
+      "price": "499",
+      "url": "https://picsum.photos/200/300?random=22",
+      "category": "Diversos"
+      },
+      {
+      "id": "1e7db004-8f33-4ab5-b340-72d9da144773",
+      "name": "Cajita sorpresa",
+      "description": "Cajita sorpresa con sorpresas sorpresivas",
+      "price": "299",
+      "url": "https://picsum.photos/200/300?random=23",
+      "category": "Diversos"
+      },
+      {
+      "id": "d2e1f959-3345-4591-b9f9-a8ecb72d7f53",
+      "name": "Juguete de construcción",
+      "description": "Juguete de construcción para niños",
+      "price": "399",
+      "url": "https://picsum.photos/200/300?random=24",
+      "category": "Diversos"
+      },
+      {
+        "id": "a7e987d9-d9d9-4b63-8bab-1f3aa42ea3d8",
+        "name": "Juego de mesa familiar",
+        "description": "Juego de mesa familiar para todas las edades",
+        "price": "599",
+        "url": "https://picsum.photos/200/300?random=25",
+        "category": "Diversos"
+      },
+      {
+        "id": "5f4e4a65-7a4a-4dd4-9c3f-3d744ce8eab3",
+        "name": "Mochila escolar",
+        "description": "Mochila escolar con compartimentos para organizar tus libros y materiales",
+        "price": "699",
+        "url": "https://picsum.photos/200/300?random=26",
+        "category": "Diversos"
+      },
+      {
+        "id": "be8ee0ab-08e3-4f3e-8a8a-4761f9cb9a9e",
+        "name": "Llavero con luz",
+        "description": "Llavero con luz para encontrar tus llaves de noche",
+        "price": "199",
+        "url": "https://picsum.photos/200/300?random=27",
+        "category": "Diversos"
+      },
+      {
+        "id": "b82e7b9d-eabd-4b1c-b7f8-0e0a23e84c61",
+        "name": "Cargador inalámbrico",
+        "description": "Cargador inalámbrico para cargar tu celular sin cables",
+        "price": "699",
+        "url": "https://picsum.photos/200/300?random=28",
+        "category": "Diversos"
+        },
+        {
+        "id": "06e27b91-6b15-4aa9-9b39-0172e79b0e1b",
+        "name": "Pantalla de proyección",
+        "description": "Pantalla de proyección para ver películas y videos en grande",
+        "price": "899",
+        "url": "https://picsum.photos/200/300?random=29",
+        "category": "Diversos"
+        }
   ]
 }
