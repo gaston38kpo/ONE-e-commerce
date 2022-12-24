@@ -10,7 +10,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
 
@@ -30,23 +31,23 @@
   <link rel="stylesheet" href="assets/css/head/head-container-inputContainer-icon.css" />
   <link rel="stylesheet" href="assets/css/btn.css" />
   <link rel="stylesheet" href="assets/css/head/head-seachBtn.css" />
-  
+
   <!-- PRODUCT INFO SECTION -->
-  <link rel="stylesheet" href="assets/css/mainSection.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo-img.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-title.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-price.css" />  
-  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-details.css" />  
-  
+  <link rel="stylesheet" href="assets/css/mainSection.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo-img.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-title.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-price.css" />
+  <link rel="stylesheet" href="assets/css/productInfo/productInfo-info-details.css" />
+
   <!-- SIMILAR PRODUCTS SECTION -->
   <link rel="stylesheet" href="assets/css/link.css" />
   <link rel="stylesheet" href="assets/css/productLine/productLine.css" />
   <link rel="stylesheet" href="assets/css/productLine/productLine-header.css" />
   <link rel="stylesheet" href="assets/css/productLine/productLine-header-title.css" />
   <link rel="stylesheet" href="assets/css/productLine/productLine-container.css" />
-  
+
   <!-- CARDS -->
   <link rel="stylesheet" href="assets/css/card/card.css" />
   <link rel="stylesheet" href="assets/css/card/card-img.css" />
@@ -59,9 +60,9 @@
   <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks-link.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe.css" />
   <link rel="stylesheet" href="assets/css/footer/footer-contactMe-title.css" />
-  
+
   <link rel="stylesheet" href="assets/css/input.css" />
-  
+
   <!-- DEVELOPER INFO SECTION -->
   <link rel="stylesheet" href="assets/css/developerInfo/developerInfo.css" />
   <link rel="stylesheet" href="assets/css/developerInfo/developerInfo-text.css" />
@@ -69,9 +70,9 @@
 
 <body>
 
-<nav class="navbar">  
-    <div class="head">  
-      
+  <nav class="navbar">
+    <div class="head">
+
       <div class="head__container">
         <a class="head__container__logo" href="./index.html">
           <img class="head__container__logo__img" src="assets/img/logo.svg" alt="logo joystick azul de alura" />
@@ -85,75 +86,30 @@
             alt="icono lupa de búsqueda" />
         </form>
       </div>
-            
-      <a class="btn btn--trasparent" href="./login.html">Men&uacute; Administrador</a>
- 
+
+      <a class="btn btn--trasparent" id="adminBtn">Men&uacute; Administrador</a>
+
       <a class="head__searchBtn" href="#">
         <img src="assets/img/searchIcon.svg" alt="icono lupa de búsqueda" />
       </a>
-      
+
     </div>
   </nav>
 
   <main class="main-section main-section--p-tb2">
-    
-    <section class="product-info">
-      <img src="assets/img/products/current-product.svg" alt="" class="product-info__img">
-      <div class="product-info__info">
-        <h2 class="product-info__info__title">Producto XYZ</h2>
-        <h3 class="product-info__info__price">$ 60,00</h3>
-        <p class="product-info__info__details">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
-      </div>
+
+    <section class="product-info" id="productInfo">
+
     </section>
 
     <section class="product-line product-line--p0">
       <header class="product-line__header">
         <h2 class="product-line__header__title">Productos similares</h2>
-        <a href="./products.html" class="link link--rightArrow">Ver todo</a>
+        <a id="showCategoryBtn" class="link link--rightArrow">Ver todo</a>
       </header>
-  
-      <div class="product-line__container product-line__container--3-rows">
-        <div class="card">
-          <img src="assets/img/products/line1-product1.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
-  
-        <div class="card">
-          <img src="assets/img/products/line1-product2.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
-  
-        <div class="card">
-          <img src="assets/img/products/line1-product3.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
-  
-        <div class="card">
-          <img src="assets/img/products/line1-product4.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
-  
-        <div class="card">
-          <img src="assets/img/products/line1-product5.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
-  
-        <div class="card">
-          <img src="assets/img/products/line1-product6.svg" alt="" class="card__img" />
-          <h3 class="card__title">Producto XYZ</h3>
-          <span class="card__price">R$ 60,00</span>
-          <a href="./product-info.html" class="link">Ver Producto</a>
-        </div>
+
+      <div class="product-line__container product-line__container--3-rows" id="productLine">
+        
       </div>
     </section>
   </main>
@@ -201,10 +157,10 @@
 
       <form action="" class="footer__contact-me" autocomplete="off">
         <h3 class="footer__contact-me__title">Hable con nosotros</h3>
-      
+
         <section class="input-box">
-          <input class="input" type="text" name="name" id="name" placeholder="Nombre" data-type="name" pattern="^.{0,40}$"
-            required />
+          <input class="input" type="text" name="name" id="name" placeholder="Nombre" data-type="name"
+            pattern="^.{0,40}$" required />
           <span class="input-box__tooltip">Este campo no es valido</span>
         </section>
         <section class="input-box">
@@ -212,9 +168,9 @@
             data-type="message" required></textarea>
           <span class="input-box__tooltip">Este campo no es valido</span>
         </section>
-      
-      
-        <input class="btn" type="submit" value="Enviar mensaje"  />
+
+
+        <input class="btn" type="submit" value="Enviar mensaje" />
       </form>
     </div>
   </footer>
@@ -225,6 +181,7 @@
   </div>
 
   <script type="module" src="assets/js/script.js"></script>
+  <script type="module" src="assets/js/controllers/infoProduct-controller.js" ></script>
 </body>
 
 </html>

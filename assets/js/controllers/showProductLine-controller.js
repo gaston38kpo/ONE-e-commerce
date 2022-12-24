@@ -1,11 +1,5 @@
 import { productServices } from "../services/product-service.js";
-
-const capwords = (text) => {
-  return text
-    .trim()
-    .toLowerCase()
-    .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
-};
+import { utils } from "../utils.js";
 
 const createNewCard = (id, name, description, price, url, category) => {
   const card = document.createElement("div");
@@ -13,11 +7,13 @@ const createNewCard = (id, name, description, price, url, category) => {
 
   card.innerHTML = `
   <img src="${url}" 
-      alt="${capwords(name)}"
+      alt="${utils.capwords(name)}"
       class="card__img" 
       loading="lazy" 
       title="${description}" />
-        <h3 class="card__title" title="${capwords(name)}">${capwords(name)}</h3>
+        <h3 class="card__title" title="${utils.capwords(
+          name
+        )}">${utils.capwords(name)}</h3>
         <span class="card__price">$ ${price}</span>
         <a href="./product-info.html?id=${id}" class="link">Ver Producto</a>
  `;
@@ -33,8 +29,8 @@ try {
   productLine.forEach((line) => {
     let LIMIT_OF_PRODUCTS_PER_LINE = 12;
     let productCounter = 0;
-    
-    listProducts.every(({ id, name, description, price, url, category }) => {
+
+     listProducts.every(({ id, name, description, price, url, category }) => {
       if (line.dataset.category.toLowerCase() == category.toLowerCase()) {
         const newCard = createNewCard(
           id,
