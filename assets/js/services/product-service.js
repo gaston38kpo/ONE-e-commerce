@@ -20,9 +20,12 @@ const createProduct = async (url, name, description, price, category) => {
 const readProduct = async (id) => {
   try {
     const response = await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`);
+    if (!response.ok) {
+      throw new Error("Producto no encontrado");
+    }
     return await response.json();
   } catch (error) {
-    window.location.href = "../screens/error.html";
+    alert("Ah ocurrido un error, vuelva a intentarlo.")
   }
 };
 
@@ -36,7 +39,7 @@ const updateProduct = async (name, email, id) => {
       body: JSON.stringify({ name, email }),
     });
   } catch (error) {
-    window.location.href = "../screens/error.html";
+    alert("Ah ocurrido un error, vuelva a intentarlo.")
   }
 };
 
@@ -46,7 +49,7 @@ const deleteProduct = async (id) => {
       method: "DELETE",
     });
   } catch (error) {
-    window.location.href = "../screens/error.html";
+    alert("Ah ocurrido un error, vuelva a intentarlo.")
   }
 };
 

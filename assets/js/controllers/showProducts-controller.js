@@ -1,45 +1,50 @@
 import { productServices } from "../services/product-service.js";
+import { utils } from "../utils.js";
 
-const capwords = (text) => {
-  return text
-    .trim()
-    .toLowerCase()
-    .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
-};
+const isUserLogged = await utils.checkSessionUserID();
 
 const createNewCard = (id, name, description, price, url, category) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  card.innerHTML = `
+  let newCard = `
   <img 
       class="card__img" 
       src="${url}" 
-      alt="${capwords(name)}" 
+      alt="${utils.capwords(name)}" 
       loading="lazy" 
-      title="${description}" />        
-  <a class="card__icon card__icon--trash" id="deleteBtn" data-id="${id}" href="#">
-      <img loading="lazy" src="assets/img/trash-icon.svg" alt="icono de papelera" />
-  </a>
-  <a class="card__icon card__icon--pencil" href="./add-product.html?id=${id}">
-      <img loading="lazy" src="assets/img/pencil-icon.svg" alt="icono de lápiz" />
-  </a>
-  <h3 class="card__title" title="${category}">${capwords(name)}</h3>
+      title="${description}" />  
+  <h3 class="card__title" title="${category}">${utils.capwords(name)}</h3>
   <span class="card__price">$ ${price}</span>
   <span class="card__id">#${id}</span>`;
 
-  const deleteBtn = card.querySelector("#deleteBtn");
+  if (isUserLogged) {
+    newCard = newCard + `
+    <a class="card__icon card__icon--trash" id="deleteBtn" data-id="${id}" href="#">
+        <img loading="lazy" src="assets/img/trash-icon.svg" alt="icono de papelera" />
+    </a>
+    <a class="card__icon card__icon--pencil" href="./add-product.html?id=${id}">
+        <img loading="lazy" src="assets/img/pencil-icon.svg" alt="icono de lápiz" />
+    </a>`;
 
-  deleteBtn.addEventListener("click", async (event) => {
-    event.preventDefault();
-    const id = deleteBtn.dataset.id;
+    card.innerHTML = newCard;
 
-    try {
-      await productServices.deleteProduct(id);
-    } catch (error) {
-      alert(`Ah ocurrido un error: ${error}`);
-    }
-  });
+    const deleteBtn = card.querySelector("#deleteBtn");
+
+    deleteBtn.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const id = deleteBtn.dataset.id;
+
+      try {
+        await productServices.deleteProduct(id);
+      } catch (error) {
+        alert(`Ah ocurrido un error: ${error}`);
+      }
+    });
+
+    return card;
+  }
+  card.innerHTML = newCard;
 
   return card;
 };
@@ -71,9 +76,14 @@ try {
         url,
         category
       );
+      
       productGrid.appendChild(newCard);
     }
   });
 } catch (error) {
-  alert("Ocurrio un error: " + error);
+  alert("Ocurrió un error: " + error);
 }
+
+const addBtn = document.getElementById("addProductBtn");
+
+addBtn.href = isUserLogged ? "./add-product.html" : "./login.html";

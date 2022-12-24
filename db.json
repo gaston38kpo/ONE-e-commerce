@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": "3b6d2a38-a2d6-4c34-9b6e-ab4e4b5f5ef5",
       "email": "usuario1@ejemplo.com",
       "password": "usuario1"
     },
     {
-      "id": "2",
+      "id": "4b9699f4c321-1c67-4b5f-bdb7-23d78f96",
       "email": "usuario2@ejemplo.com",
       "password": "usuario2"
     }
