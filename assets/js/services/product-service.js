@@ -1,5 +1,7 @@
 const listProducts = async () => {
-  const response = await fetch("https://e-commerce-lz5p.onrender.com/products/");
+  const response = await fetch(
+    "https://e-commerce-lz5p.onrender.com/products/"
+  );
   return await response.json();
 };
 
@@ -10,7 +12,14 @@ const createProduct = async (url, name, description, price, category) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id: uuid.v4(), name, description, price, url, category}),
+      body: JSON.stringify({
+        id: uuid.v4(),
+        name,
+        description,
+        price,
+        url,
+        category,
+      }),
     });
   } catch (error) {
     alert("Error: " + error);
@@ -19,27 +28,29 @@ const createProduct = async (url, name, description, price, category) => {
 
 const readProduct = async (id) => {
   try {
-    const response = await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`);
+    const response = await fetch(
+      `https://e-commerce-lz5p.onrender.com/products/${id}`
+    );
     if (!response.ok) {
       throw new Error("Producto no encontrado");
     }
     return await response.json();
   } catch (error) {
-    alert("Ah ocurrido un error, vuelva a intentarlo.")
+    alert("Ah ocurrido un error, vuelva a intentarlo.");
   }
 };
 
-const updateProduct = async (name, email, id) => {
+const updateProduct = async (id, name, description, price, url, category) => {
   try {
     return await fetch(`https://e-commerce-lz5p.onrender.com/products/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email }),
+      body: JSON.stringify({ name, description, price, url, category }),
     });
   } catch (error) {
-    alert("Ah ocurrido un error, vuelva a intentarlo.")
+    alert("Ah ocurrido un error, vuelva a intentarlo.");
   }
 };
 
@@ -49,7 +60,7 @@ const deleteProduct = async (id) => {
       method: "DELETE",
     });
   } catch (error) {
-    alert("Ah ocurrido un error, vuelva a intentarlo.")
+    alert("Ah ocurrido un error, vuelva a intentarlo.");
   }
 };
 

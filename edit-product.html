@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Editar Producto / e-commerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- NAVBAR SECTION -->
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/head/head.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-logo.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-logo-title.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-logo-img.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-inputContainer.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-inputContainer-input.css" />
+  <link rel="stylesheet" href="assets/css/head/head-container-inputContainer-icon.css" />
+  <link rel="stylesheet" href="assets/css/btn.css" />
+  <link rel="stylesheet" href="assets/css/head/head-seachBtn.css" />
+  
+  <!-- ADD FORM SECTION -->
+  <link rel="stylesheet" href="assets/css/mainSection.css" />  
+  <link rel="stylesheet" href="assets/css/addForm/addForm.css" />    
+  <link rel="stylesheet" href="assets/css/addForm/addForm-title.css" />    
+
+  <!-- FOOTER SECTION -->
+  <link rel="stylesheet" href="assets/css/footer/footer.css" />
+  <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks.css" />
+  <link rel="stylesheet" href="assets/css/footer/footer-rapidLinks-link.css" />
+  <link rel="stylesheet" href="assets/css/footer/footer-contactMe.css" />
+  <link rel="stylesheet" href="assets/css/footer/footer-contactMe-title.css" />
+  
+  <link rel="stylesheet" href="assets/css/input.css" />
+  
+  <!-- DEVELOPER INFO SECTION -->
+  <link rel="stylesheet" href="assets/css/developerInfo/developerInfo.css" />
+  <link rel="stylesheet" href="assets/css/developerInfo/developerInfo-text.css" />
+</head>
+
+<body>
+
+<nav class="navbar">  
+    <div class="head">  
+      
+      <div class="head__container">
+        <a class="head__container__logo" href="./index.html">
+          <img class="head__container__logo__img" src="assets/img/logo.svg" alt="logo joystick azul de alura" />
+          <h1 class="head__container__logo__title1">Alura</h1>
+          <h1 class="head__container__logo__title2">Geek</h1>
+        </a>
+        <form class="head__container__inputContainer" id="searchForm">
+          <input class="head__container__inputContainer__input" type="text" id="searchBar"
+            placeholder="¿Qué deseas buscar?" />
+          <img class="head__container__inputContainer__icon" src="assets/img/searchIcon.svg"
+            alt="icono lupa de búsqueda" />
+        </form>
+      </div>
+            
+      <a class="btn btn--trasparent" href="./products.html">Men&uacute; Administrador</a>
+ 
+      <a class="head__searchBtn" href="#">
+        <img src="assets/img/searchIcon.svg" alt="icono lupa de búsqueda" />
+      </a>
+      
+    </div>
+  </nav>
+
+  <main class="main-section">
+    <form action="" class="add-form" autocomplete="off">
+      <h3 class="add-form__title" >Editar producto</h3>
+    <section class="input-box">
+      <input class="input" type="text" name="url" id="url" placeholder="URL de imagen" data-type="productURL" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="text" name="category" id="category" placeholder="Categoría" data-type="productCategory" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="text" name="product-name" id="product-name" placeholder="Nombre del producto" data-type="productName" pattern="^.{0,20}$" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <input class="input" type="number" name="product-price" id="product-price" placeholder="Precio del producto" data-type="productPrice" required>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+    <section class="input-box">
+      <textarea class="input" name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" data-type="productDescription" required></textarea>
+      <span class="input-box__tooltip">Este campo no es valido</span>
+    </section>
+      <input class="btn" type="submit" value="Confirmar">
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="head__container__logo head__container__logo--footer head__container__logo--displayPCQuery">
+        <img class="head__container__logo__img head__container__logo__img--footer" src="assets/img/logo.svg"
+          alt="logo joystick azul de alura" />
+        <h1 class="head__container__logo__title1 head__container__logo__title--footer">
+          Alura
+        </h1>
+        <h1 class="head__container__logo__title2 head__container__logo__title--footer">Geek</h1>
+      </div>
+      <ul class="footer__rapid-links">
+        <li class="footer__rapid-links__logo">
+          <div class="head__container__logo head__container__logo--footer">
+            <img class="head__container__logo__img head__container__logo__img--footer" src="assets/img/logo.svg"
+              alt="logo joystick azul de alura" />
+            <h1 class="head__container__logo__title1 head__container__logo__title--footer">
+              Alura
+            </h1>
+            <h1 class="head__container__logo__title2 head__container__logo__title--footer">Geek</h1>
+          </div>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Quienes somos</a>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Política de privacidad</a>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Programa de fidelidad</a>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Nuestras tiendas</a>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Quiero ser franquiciado</a>
+        </li>
+        <li class="footer__rapid-links__link">
+          <a href="#">Anuncie aquí</a>
+        </li>
+      </ul>
+
+      <form action="" class="footer__contact-me" autocomplete="off">
+        <h3 class="footer__contact-me__title">Hable con nosotros</h3>
+      
+        <section class="input-box">
+          <input class="input" type="text" name="name" id="name" placeholder="Nombre" data-type="name" pattern="^.{0,40}$"
+            required />
+          <span class="input-box__tooltip">Este campo no es valido</span>
+        </section>
+        <section class="input-box">
+          <textarea class="input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje"
+            data-type="message" required></textarea>
+          <span class="input-box__tooltip">Este campo no es valido</span>
+        </section>
+      
+      
+        <input class="btn" type="submit" value="Enviar mensaje"  />
+      </form>
+    </div>
+  </footer>
+
+  <div class="developer-info">
+    <p class="developer-info__text">Desarrollado por Gast&oacute;n Giacobini</p>
+    <p class="developer-info__text">2022</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+  integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="assets/js/script.js"></script>
+  <script type="module" src="assets/js/controllers/editProduct-controller.js"></script>
+</body>
+
+</html>

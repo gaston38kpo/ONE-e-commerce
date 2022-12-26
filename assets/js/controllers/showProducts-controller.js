@@ -23,7 +23,7 @@ const createNewCard = (id, name, description, price, url, category) => {
     <a class="card__icon card__icon--trash" id="deleteBtn" data-id="${id}" href="#">
         <img loading="lazy" src="assets/img/trash-icon.svg" alt="icono de papelera" />
     </a>
-    <a class="card__icon card__icon--pencil" href="./add-product.html?id=${id}">
+    <a class="card__icon card__icon--pencil" href="./edit-product.html?id=${id}">
         <img loading="lazy" src="assets/img/pencil-icon.svg" alt="icono de lápiz" />
     </a>`;
 
