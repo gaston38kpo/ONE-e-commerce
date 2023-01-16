@@ -5,7 +5,7 @@ const listProducts = async () => {
   return await response.json();
 };
 
-const createProduct = async (url, name, description, price, category) => {
+const createProduct = async (url, name, description, price, url, category) => {
   try {
     return await fetch("https://e-commerce-lz5p.onrender.com/products", {
       method: "POST",
