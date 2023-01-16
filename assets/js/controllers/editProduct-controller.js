@@ -15,7 +15,7 @@ const setProductInfo = async (id) => {
     const { name, description, price, url, category } =
       await productServices.readProduct(id);
     if (name && description && price && url && category) {
-      document.getElementById("product-name").value = await name;
+      document.getElementById("product-name").value = name;
       document.getElementById("description").value = description;
       document.getElementById("product-price").value = price;
       document.getElementById("url").value = url;
